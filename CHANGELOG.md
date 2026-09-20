@@ -6,6 +6,7 @@
 
 - Replace the restricted-use Google Web Trillion Word Corpus derivative with common and exam
   vocabulary from the reviewed MIT-licensed ECDICT snapshot.
+- Make the ECDICT extraction deterministic and checksum-guarded.
 
 ### 0.4.0 — 2026-09-15
 

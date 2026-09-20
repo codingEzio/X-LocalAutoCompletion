@@ -17,6 +17,12 @@ The first 10,000 entries use ECDICT's contemporary-frequency (`frq`) order. Rema
 IELTS/TOEFL/GRE-tagged words follow as exam extras. Duplicate spellings are compared
 case-insensitively, and runtime rows are sorted by spelling for prefix lookup.
 
+Reproduce from the exact reviewed upstream CSV:
+
+```sh
+deno task vocabulary PATH_TO_ECDICT_CSV
+```
+
 ## Excluded source
 
 `first20hours/google-10000-english` is not shipped. Its own license says its data derives from the
