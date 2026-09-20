@@ -5,7 +5,9 @@ Private, instant word completion for Visual Studio Code. No model, account, API 
 Type `ar` in a file that contains `archive`, or type `th` anywhere: it can offer `archive` or `the`.
 That is the whole product.
 
-English · [简体中文](#简体中文)
+[繁體中文](docs/README.zh-TW.md) · [简体中文](docs/README.zh-CN.md) · [한국어](docs/README.ko.md) ·
+[日本語](docs/README.ja.md) · [Español](docs/README.es.md) · [Русский](docs/README.ru.md) ·
+[Українська](docs/README.uk.md)
 
 ### What it does
 
@@ -26,7 +28,7 @@ English · [简体中文](#简体中文)
 ```sh
 deno task check
 deno task package
-code --install-extension dist/x-local-auto-completion-0.4.1.vsix
+code --install-extension dist/x-local-auto-completion-0.5.0.vsix
 ```
 
 Use **Developer: Reload Window** after installing an updated VSIX. `editor.inlineSuggest.enabled`
@@ -46,14 +48,7 @@ must stay on.
 ```sh
 deno task check
 deno task package
-unzip -t dist/x-local-auto-completion-0.4.1.vsix
+unzip -t dist/x-local-auto-completion-0.5.0.vsix
 ```
 
-[Vocabulary sources](data/SOURCE.md).
-
-## 简体中文
-
-当前文件里出现过的词，加上内置离线英文词，用来补全当前正在输入的词。没有
-AI、没有网络、没有跨文件爬取。
-
-安装后执行 **Developer: Reload Window**，并保持 `editor.inlineSuggest.enabled` 开启。
+[Vocabulary sources](data/SOURCE.md) · [Changelog](CHANGELOG.md)

@@ -2,7 +2,7 @@
   "tasks": {
     "fmt": "deno fmt --check deno.json package.json extension.js src scripts test",
     "lint": "deno lint extension.js src scripts test",
-    "test": "deno test --allow-read=src,extension.js,package.json,data test",
+    "test": "deno test --allow-read=. test",
     "check": "deno task fmt && deno task lint && deno task test",
     "vocabulary": "deno run --allow-read --allow-write=data scripts/import-vocabulary.ts",
     "package": "deno run --allow-read --allow-write --allow-run scripts/package.ts"

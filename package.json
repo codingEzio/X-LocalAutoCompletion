@@ -1,8 +1,8 @@
 {
   "name": "x-local-auto-completion",
-  "displayName": "X-LocalAutoCompletion",
-  "description": "Fast local word completion from the current file and offline English.",
-  "version": "0.4.1",
+  "displayName": "%extension.displayName%",
+  "description": "%extension.description%",
+  "version": "0.5.0",
   "publisher": "alex",
   "license": "MIT",
   "icon": "assets/icon.png",
@@ -30,13 +30,13 @@
   "main": "./extension.js",
   "contributes": {
     "configuration": {
-      "title": "X-LocalAutoCompletion",
+      "title": "%configuration.title%",
       "properties": {
         "localAutoCompletion.enabled": {
           "type": "boolean",
           "default": true,
           "scope": "resource",
-          "description": "Enable local file and English word completions."
+          "description": "%configuration.enabled.description%"
         },
         "localAutoCompletion.minimumPrefixLength": {
           "type": "number",
@@ -44,7 +44,7 @@
           "minimum": 1,
           "maximum": 6,
           "scope": "resource",
-          "description": "Characters required before a completion is offered."
+          "description": "%configuration.minimumPrefixLength.description%"
         }
       }
     }

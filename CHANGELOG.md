@@ -1,6 +1,14 @@
 # Changelog
 
-## English
+[繁體中文](docs/CHANGELOG.zh-TW.md) · [简体中文](docs/CHANGELOG.zh-CN.md) ·
+[한국어](docs/CHANGELOG.ko.md) · [日本語](docs/CHANGELOG.ja.md) · [Español](docs/CHANGELOG.es.md) ·
+[Русский](docs/CHANGELOG.ru.md) · [Українська](docs/CHANGELOG.uk.md)
+
+### 0.5.0 — 2026-09-20
+
+- Localize the README and Visual Studio Code settings for Traditional Chinese, Simplified Chinese,
+  Korean, Japanese, Spanish, Russian, and Ukrainian while retaining English as the fallback.
+- Document and verify Visual Studio Code as the supported host.
 
 ### 0.4.1 — 2026-09-20
 
@@ -41,18 +49,3 @@
 ### 0.1.0 — 2026-09-03
 
 - Initial nearby-document word completion.
-
-## 简体中文
-
-### 0.4.1 — 2026-09-20
-
-- 移除限制再分发的 Google Web Trillion Word Corpus 衍生词表，常用词和考试词统一改用已审查、 MIT
-  授权的 ECDICT 快照。
-- ECDICT 提取流程可重复执行，并验证源文件校验值。
-
-### 0.4.0 — 2026-09-15
-
-- 产品更名为 X-LocalAutoCompletion。
-- 使用当前文件全文，而不是附近行窗口。
-- 始终启用按频率排序的离线英文词库。
-- 移除工作区索引、学习缓存、固定词、补全界面切换、CJK locale，以及实验性 native 基准后端。

@@ -1,6 +1,7 @@
 const root = new URL("..", import.meta.url).pathname;
 const packagePath = `${root}/package.json`;
 const metadata = JSON.parse(await Deno.readTextFile(packagePath));
+const messages = JSON.parse(await Deno.readTextFile(`${root}/package.nls.json`));
 const categories = Array.isArray(metadata.categories)
   ? metadata.categories.map((category: string) => escapeXML(category)).join(",")
   : "Other";
@@ -8,6 +9,11 @@ const outputDirectory = `${root}/dist`;
 const outputPath = `${outputDirectory}/${metadata.name}-${metadata.version}.vsix`;
 const stagingDirectory = await Deno.makeTempDir({ prefix: "x-local-auto-completion-package-" });
 const extensionDirectory = `${stagingDirectory}/extension`;
+
+function localized(value: string) {
+  const match = /^%(.+)%$/.exec(value);
+  return match ? messages[match[1]] ?? value : value;
+}
 
 function escapeXML(value: string) {
   return value.replaceAll("&", "&amp;")
@@ -21,8 +27,8 @@ function vsixManifest() {
   const name = escapeXML(metadata.name);
   const publisher = escapeXML(metadata.publisher);
   const version = escapeXML(metadata.version);
-  const displayName = escapeXML(metadata.displayName);
-  const description = escapeXML(metadata.description);
+  const displayName = escapeXML(localized(metadata.displayName));
+  const description = escapeXML(localized(metadata.description));
   return `<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
   <Metadata>
@@ -75,7 +81,16 @@ try {
       "CHANGELOG.md",
       "LICENSE",
       "assets",
+      "docs",
       "extension.js",
+      "package.nls.json",
+      "package.nls.zh-tw.json",
+      "package.nls.zh-cn.json",
+      "package.nls.ko.json",
+      "package.nls.ja.json",
+      "package.nls.es.json",
+      "package.nls.ru.json",
+      "package.nls.uk.json",
       "src",
     ]
   ) {
