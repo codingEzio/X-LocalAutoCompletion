@@ -1,20 +1,19 @@
 # X-LocalAutoCompletion
 
-Private, instant word completion for Cursor / VS Code. No model, account, API key, or network.
+Private, instant word completion for Visual Studio Code. No model, account, API key, or network.
 
 Type `ar` in a file that contains `archive`, or type `th` anywhere: it can offer `archive` or `the`.
 That is the whole product.
 
 English · [简体中文](#简体中文)
 
-## English
-
 ### What it does
 
 - Completes words that already appear **anywhere in the current file**.
 - Always also completes from a bundled offline English list: 10,000 contemporary-frequency ECDICT
   words plus extra IELTS/TOEFL/GRE headwords. File matches rank first; English fills the rest.
-- Shows ghost text while typing. `Ctrl+Space` lists up to eight ranked choices.
+- Shows ghost text while typing. **Trigger Suggest** lists up to eight ranked choices; its default
+  VS Code shortcut is `Ctrl+Space` when macOS does not reserve that shortcut.
 
 ### What it does not do
 
@@ -27,7 +26,7 @@ English · [简体中文](#简体中文)
 ```sh
 deno task check
 deno task package
-cursor --install-extension dist/x-local-auto-completion-0.4.1.vsix
+code --install-extension dist/x-local-auto-completion-0.4.1.vsix
 ```
 
 Use **Developer: Reload Window** after installing an updated VSIX. `editor.inlineSuggest.enabled`
