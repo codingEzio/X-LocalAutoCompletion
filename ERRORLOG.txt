@@ -1,0 +1,5 @@
+2026-09-15 product focus: whole-file tokens plus always-on ranked English; drop workspace index, learning, pinned words, surface picker, CJK locale, and native benchmark.
+2026-09-15 reliability: nearby 250-line windows missed distant file words; IELTS/TOEFL/GRE-only vocab omitted common English such as "the"/"this"; English was opt-in.
+2026-09-03 packaging: Deno has no Deno.cp API; use native cp -R within disposable staging, then verify the exact VSIX with unzip -t (scripts/package.ts).
+2026-09-03 host verification: an installer log does not prove activation; verify the extension ID in exthost.log and exercise the installed artifact.
+2026-09-07 inline visibility: selected menu text and case-sensitive filtering can suppress an otherwise valid candidate; filter before ranking and supply typed-prefix-compatible filterText (test/provider_test.js).

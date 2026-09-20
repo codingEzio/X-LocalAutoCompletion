@@ -1,0 +1,14 @@
+{
+  "tasks": {
+    "fmt": "deno fmt --check deno.json package.json extension.js src scripts test",
+    "lint": "deno lint extension.js src scripts test",
+    "test": "deno test --allow-read=src,extension.js,package.json,data test",
+    "check": "deno task fmt && deno task lint && deno task test",
+    "package": "deno run --allow-read --allow-write --allow-run scripts/package.ts"
+  },
+  "fmt": {
+    "lineWidth": 100,
+    "semiColons": true,
+    "singleQuote": false
+  }
+}
