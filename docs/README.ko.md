@@ -24,6 +24,9 @@ Visual Studio Code 전용의 빠르고 개인정보 보호에 초점을 둔 단�
 
 ## 설치
 
+[Visual Studio Marketplace에서 설치](https://marketplace.visualstudio.com/items?itemName=codingEzio.x-local-auto-completion) ·
+[Visual Studio Code에서 열기](https://vscode.dev/redirect?url=vscode%3Aextension%2FcodingEzio.x-local-auto-completion)
+
 ```sh
 deno task check
 deno task package

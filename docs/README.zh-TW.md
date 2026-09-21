@@ -22,6 +22,9 @@ Code；不需要模型、帳號、API 金鑰或網路連線。
 
 ## 安裝
 
+[從 Visual Studio Marketplace 安裝](https://marketplace.visualstudio.com/items?itemName=codingEzio.x-local-auto-completion) ·
+[在 Visual Studio Code 中開啟](https://vscode.dev/redirect?url=vscode%3Aextension%2FcodingEzio.x-local-auto-completion)
+
 ```sh
 deno task check
 deno task package

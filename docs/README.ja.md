@@ -24,6 +24,9 @@ Visual Studio Code 専用の、高速でプライバシーに配慮した単語�
 
 ## インストール
 
+[Visual Studio Marketplace からインストール](https://marketplace.visualstudio.com/items?itemName=codingEzio.x-local-auto-completion) ·
+[Visual Studio Code で開く](https://vscode.dev/redirect?url=vscode%3Aextension%2FcodingEzio.x-local-auto-completion)
+
 ```sh
 deno task check
 deno task package

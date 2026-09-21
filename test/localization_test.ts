@@ -71,6 +71,18 @@ Deno.test("README routes to every full localization and documents VS Code only",
     assert(localized.includes("Trigger Suggest"), `${path} omits the command name`);
     assert(localized.includes("Ctrl+Space"), `${path} omits the default shortcut`);
     assert(localized.includes("macOS"), `${path} omits the macOS shortcut boundary`);
+    assert(
+      localized.includes(
+        "https://marketplace.visualstudio.com/items?itemName=codingEzio.x-local-auto-completion",
+      ),
+      `${path} omits the public Marketplace link`,
+    );
+    assert(
+      localized.includes(
+        "https://vscode.dev/redirect?url=vscode%3Aextension%2FcodingEzio.x-local-auto-completion",
+      ),
+      `${path} omits the VS Code install link`,
+    );
 
     const changelogPath = `docs/CHANGELOG.${locale}.md`;
     const changelog = await Deno.readTextFile(new URL(changelogPath, root));

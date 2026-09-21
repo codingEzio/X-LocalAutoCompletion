@@ -27,6 +27,9 @@
 
 ## Установлення
 
+[Установити з Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=codingEzio.x-local-auto-completion) ·
+[Відкрити у Visual Studio Code](https://vscode.dev/redirect?url=vscode%3Aextension%2FcodingEzio.x-local-auto-completion)
+
 ```sh
 deno task check
 deno task package

@@ -25,6 +25,9 @@ Escribe `ar` en un archivo que contenga `archive`, o escribe `th` en cualquier p
 
 ## Instalar
 
+[Instalar desde Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=codingEzio.x-local-auto-completion) ·
+[Abrir en Visual Studio Code](https://vscode.dev/redirect?url=vscode%3Aextension%2FcodingEzio.x-local-auto-completion)
+
 ```sh
 deno task check
 deno task package
