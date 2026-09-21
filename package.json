@@ -2,8 +2,8 @@
   "name": "x-local-auto-completion",
   "displayName": "%extension.displayName%",
   "description": "%extension.description%",
-  "version": "0.5.0",
-  "publisher": "alex",
+  "version": "0.5.1",
+  "publisher": "codingEzio",
   "license": "MIT",
   "repository": {
     "type": "git",

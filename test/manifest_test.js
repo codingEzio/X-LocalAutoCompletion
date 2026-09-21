@@ -14,6 +14,12 @@ Deno.test("the product is file plus English completion only", () => {
   if (metadata.name !== "x-local-auto-completion") {
     throw new Error(`unexpected extension name: ${metadata.name}`);
   }
+  if (metadata.publisher !== "codingEzio") {
+    throw new Error(`unexpected Marketplace publisher: ${metadata.publisher}`);
+  }
+  if (metadata.version !== "0.5.1") {
+    throw new Error(`unexpected release version: ${metadata.version}`);
+  }
 });
 
 Deno.test("the public package points back to its GitHub project", () => {

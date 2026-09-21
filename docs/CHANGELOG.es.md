@@ -1,5 +1,10 @@
 # Registro de cambios
 
+## 0.5.1 — 2026-09-21
+
+- Usar la identidad de publicador codingEzio en Marketplace para publicar la extensión desde la
+  cuenta de Microsoft autorizada.
+
 ## 0.5.0 — 2026-09-20
 
 - Añadir localizaciones del README y de los ajustes de la extensión en siete idiomas nuevos, con el

@@ -27,7 +27,7 @@ Visual Studio Code 専用の、高速でプライバシーに配慮した単語�
 ```sh
 deno task check
 deno task package
-code --install-extension dist/x-local-auto-completion-0.5.0.vsix
+code --install-extension dist/x-local-auto-completion-0.5.1.vsix
 ```
 
 更新した VSIX のインストール後に **Developer: Reload Window**
@@ -47,7 +47,7 @@ code --install-extension dist/x-local-auto-completion-0.5.0.vsix
 ```sh
 deno task check
 deno task package
-unzip -t dist/x-local-auto-completion-0.5.0.vsix
+unzip -t dist/x-local-auto-completion-0.5.1.vsix
 ```
 
 [語彙の出典](../data/SOURCE.md)

@@ -28,7 +28,7 @@ Escribe `ar` en un archivo que contenga `archive`, o escribe `th` en cualquier p
 ```sh
 deno task check
 deno task package
-code --install-extension dist/x-local-auto-completion-0.5.0.vsix
+code --install-extension dist/x-local-auto-completion-0.5.1.vsix
 ```
 
 Después de instalar una versión actualizada del VSIX, ejecuta **Developer: Reload Window**.
@@ -48,7 +48,7 @@ Después de instalar una versión actualizada del VSIX, ejecuta **Developer: Rel
 ```sh
 deno task check
 deno task package
-unzip -t dist/x-local-auto-completion-0.5.0.vsix
+unzip -t dist/x-local-auto-completion-0.5.1.vsix
 ```
 
 ## Fuentes del vocabulario

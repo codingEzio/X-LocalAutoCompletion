@@ -4,6 +4,11 @@
 [한국어](docs/CHANGELOG.ko.md) · [日本語](docs/CHANGELOG.ja.md) · [Español](docs/CHANGELOG.es.md) ·
 [Русский](docs/CHANGELOG.ru.md) · [Українська](docs/CHANGELOG.uk.md)
 
+### 0.5.1 — 2026-09-21
+
+- Use the `codingEzio` Marketplace publisher identity so the extension can be published from the
+  authorized Microsoft account.
+
 ### 0.5.0 — 2026-09-20
 
 - Localize the README and Visual Studio Code settings for Traditional Chinese, Simplified Chinese,

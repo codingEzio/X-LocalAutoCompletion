@@ -25,7 +25,7 @@ Code；不需要模型、帳號、API 金鑰或網路連線。
 ```sh
 deno task check
 deno task package
-code --install-extension dist/x-local-auto-completion-0.5.0.vsix
+code --install-extension dist/x-local-auto-completion-0.5.1.vsix
 ```
 
 安裝或更新 VSIX 後，請執行 **Developer: Reload Window**。`editor.inlineSuggest.enabled`
@@ -45,7 +45,7 @@ code --install-extension dist/x-local-auto-completion-0.5.0.vsix
 ```sh
 deno task check
 deno task package
-unzip -t dist/x-local-auto-completion-0.5.0.vsix
+unzip -t dist/x-local-auto-completion-0.5.1.vsix
 ```
 
 [詞彙來源](../data/SOURCE.md)。

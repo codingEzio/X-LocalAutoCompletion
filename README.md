@@ -28,7 +28,7 @@ That is the whole product.
 ```sh
 deno task check
 deno task package
-code --install-extension dist/x-local-auto-completion-0.5.0.vsix
+code --install-extension dist/x-local-auto-completion-0.5.1.vsix
 ```
 
 Use **Developer: Reload Window** after installing an updated VSIX. `editor.inlineSuggest.enabled`
@@ -48,7 +48,7 @@ must stay on.
 ```sh
 deno task check
 deno task package
-unzip -t dist/x-local-auto-completion-0.5.0.vsix
+unzip -t dist/x-local-auto-completion-0.5.1.vsix
 ```
 
 [Vocabulary sources](data/SOURCE.md) · [Changelog](CHANGELOG.md)
