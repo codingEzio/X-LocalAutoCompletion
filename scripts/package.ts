@@ -70,6 +70,7 @@ const contentTypes = `<?xml version="1.0" encoding="utf-8"?>
   <Default Extension="svg" ContentType="image/svg+xml" />
   <Default Extension="xml" ContentType="text/xml" />
   <Default Extension="vsixmanifest" ContentType="text/xml" />
+  <Override PartName="/extension/LICENSE" ContentType="text/plain" />
 </Types>`;
 
 try {

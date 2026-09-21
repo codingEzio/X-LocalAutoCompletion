@@ -34,3 +34,10 @@ Deno.test("the public package points back to its GitHub project", () => {
     throw new Error(`unexpected issue tracker: ${JSON.stringify(metadata.bugs)}`);
   }
 });
+
+Deno.test("the VSIX declares a content type for the extensionless license", async () => {
+  const source = await Deno.readTextFile(new URL("../scripts/package.ts", import.meta.url));
+  if (!source.includes('<Override PartName="/extension/LICENSE" ContentType="text/plain" />')) {
+    throw new Error("VSIX content types must declare the extensionless LICENSE asset");
+  }
+});
