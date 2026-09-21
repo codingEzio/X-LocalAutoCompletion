@@ -5,6 +5,14 @@
   "version": "0.5.0",
   "publisher": "alex",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codingEzio/X-LocalAutoCompletion.git"
+  },
+  "homepage": "https://github.com/codingEzio/X-LocalAutoCompletion#readme",
+  "bugs": {
+    "url": "https://github.com/codingEzio/X-LocalAutoCompletion/issues"
+  },
   "icon": "assets/icon.png",
   "engines": {
     "vscode": "^1.97.0"

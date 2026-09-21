@@ -15,3 +15,16 @@ Deno.test("the product is file plus English completion only", () => {
     throw new Error(`unexpected extension name: ${metadata.name}`);
   }
 });
+
+Deno.test("the public package points back to its GitHub project", () => {
+  const repository = "https://github.com/codingEzio/X-LocalAutoCompletion";
+  if (metadata.repository?.url !== `${repository}.git`) {
+    throw new Error(`unexpected repository: ${JSON.stringify(metadata.repository)}`);
+  }
+  if (metadata.homepage !== `${repository}#readme`) {
+    throw new Error(`unexpected homepage: ${metadata.homepage}`);
+  }
+  if (metadata.bugs?.url !== `${repository}/issues`) {
+    throw new Error(`unexpected issue tracker: ${JSON.stringify(metadata.bugs)}`);
+  }
+});
