@@ -1,5 +1,9 @@
 # 変更履歴
 
+## 0.5.2 — 2026-09-21
+
+- 手動アップロードが Private のままにならないよう、VSIX manifest に Marketplace の公開設定を指定しました。
+
 ## 0.5.1 — 2026-09-21
 
 - 承認済みの Microsoft アカウントから拡張機能を公開できるよう、Marketplace の発行元 ID に codingEzio

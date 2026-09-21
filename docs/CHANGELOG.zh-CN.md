@@ -1,5 +1,9 @@
 # 更新日志
 
+### 0.5.2 — 2026-09-21
+
+- 在 VSIX manifest 中指定 Marketplace 公开可见性，避免手动上传后保持 Private。
+
 ### 0.5.1 — 2026-09-21
 
 - 使用 codingEzio Marketplace 发布者身份，以便通过已授权的 Microsoft 帐户发布扩展。

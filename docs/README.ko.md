@@ -27,7 +27,7 @@ Visual Studio Code 전용의 빠르고 개인정보 보호에 초점을 둔 단�
 ```sh
 deno task check
 deno task package
-code --install-extension dist/x-local-auto-completion-0.5.1.vsix
+code --install-extension dist/x-local-auto-completion-0.5.2.vsix
 ```
 
 업데이트된 VSIX를 설치한 뒤 **Developer: Reload Window**를 실행하세요.
@@ -47,7 +47,7 @@ code --install-extension dist/x-local-auto-completion-0.5.1.vsix
 ```sh
 deno task check
 deno task package
-unzip -t dist/x-local-auto-completion-0.5.1.vsix
+unzip -t dist/x-local-auto-completion-0.5.2.vsix
 ```
 
 [어휘 출처](../data/SOURCE.md).

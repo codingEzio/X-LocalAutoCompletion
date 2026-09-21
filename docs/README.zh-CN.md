@@ -25,7 +25,7 @@
 ```sh
 deno task check
 deno task package
-code --install-extension dist/x-local-auto-completion-0.5.1.vsix
+code --install-extension dist/x-local-auto-completion-0.5.2.vsix
 ```
 
 安装或更新 VSIX 后，请执行 **Developer: Reload Window**。`editor.inlineSuggest.enabled`
@@ -45,7 +45,7 @@ code --install-extension dist/x-local-auto-completion-0.5.1.vsix
 ```sh
 deno task check
 deno task package
-unzip -t dist/x-local-auto-completion-0.5.1.vsix
+unzip -t dist/x-local-auto-completion-0.5.2.vsix
 ```
 
 [词汇来源](../data/SOURCE.md)。

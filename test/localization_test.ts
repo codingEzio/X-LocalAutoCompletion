@@ -77,6 +77,7 @@ Deno.test("README routes to every full localization and documents VS Code only",
     assert(changelog.includes("Visual Studio Code"), `${changelogPath} omits the verified host`);
     for (
       const version of [
+        "0.5.2",
         "0.5.1",
         "0.5.0",
         "0.4.1",

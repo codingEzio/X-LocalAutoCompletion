@@ -36,6 +36,7 @@ function vsixManifest() {
     <DisplayName>${displayName}</DisplayName>
     <Description xml:space="preserve">${description}</Description>
     <Categories>${categories}</Categories>
+    <GalleryFlags>Public</GalleryFlags>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Code" />

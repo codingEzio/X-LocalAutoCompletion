@@ -17,7 +17,7 @@ Deno.test("the product is file plus English completion only", () => {
   if (metadata.publisher !== "codingEzio") {
     throw new Error(`unexpected Marketplace publisher: ${metadata.publisher}`);
   }
-  if (metadata.version !== "0.5.1") {
+  if (metadata.version !== "0.5.2") {
     throw new Error(`unexpected release version: ${metadata.version}`);
   }
 });
@@ -39,5 +39,12 @@ Deno.test("the VSIX declares a content type for the extensionless license", asyn
   const source = await Deno.readTextFile(new URL("../scripts/package.ts", import.meta.url));
   if (!source.includes('<Override PartName="/extension/LICENSE" ContentType="text/plain" />')) {
     throw new Error("VSIX content types must declare the extensionless LICENSE asset");
+  }
+});
+
+Deno.test("the VSIX manifest requests public Marketplace availability", async () => {
+  const source = await Deno.readTextFile(new URL("../scripts/package.ts", import.meta.url));
+  if (!source.includes("<GalleryFlags>Public</GalleryFlags>")) {
+    throw new Error("VSIX manifest must request public Marketplace availability");
   }
 });

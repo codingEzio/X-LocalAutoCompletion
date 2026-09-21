@@ -31,7 +31,7 @@
 ```sh
 deno task check
 deno task package
-code --install-extension dist/x-local-auto-completion-0.5.1.vsix
+code --install-extension dist/x-local-auto-completion-0.5.2.vsix
 ```
 
 После установки обновленного VSIX выполните **Developer: Reload Window**. Параметр
@@ -53,7 +53,7 @@ Visual Studio Code — поддерживаемое хост-приложени�
 ```sh
 deno task check
 deno task package
-unzip -t dist/x-local-auto-completion-0.5.1.vsix
+unzip -t dist/x-local-auto-completion-0.5.2.vsix
 ```
 
 [Источники словаря](../data/SOURCE.md).

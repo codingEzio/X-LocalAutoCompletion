@@ -4,6 +4,11 @@
 [한국어](docs/CHANGELOG.ko.md) · [日本語](docs/CHANGELOG.ja.md) · [Español](docs/CHANGELOG.es.md) ·
 [Русский](docs/CHANGELOG.ru.md) · [Українська](docs/CHANGELOG.uk.md)
 
+### 0.5.2 — 2026-09-21
+
+- Mark the VSIX manifest for public Marketplace availability instead of leaving manual uploads
+  private.
+
 ### 0.5.1 — 2026-09-21
 
 - Use the `codingEzio` Marketplace publisher identity so the extension can be published from the

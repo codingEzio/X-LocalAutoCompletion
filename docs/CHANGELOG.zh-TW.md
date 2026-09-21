@@ -1,5 +1,9 @@
 # 變更記錄
 
+### 0.5.2 — 2026-09-21
+
+- 在 VSIX manifest 中指定 Marketplace 公開可見性，避免手動上傳後維持 Private。
+
 ### 0.5.1 — 2026-09-21
 
 - 使用 codingEzio Marketplace 發佈者身分，讓擴充功能可由已授權的 Microsoft 帳戶發佈。

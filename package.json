@@ -2,7 +2,7 @@
   "name": "x-local-auto-completion",
   "displayName": "%extension.displayName%",
   "description": "%extension.description%",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "publisher": "codingEzio",
   "license": "MIT",
   "repository": {

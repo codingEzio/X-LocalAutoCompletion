@@ -1,5 +1,10 @@
 # Registro de cambios
 
+## 0.5.2 — 2026-09-21
+
+- Indicar la disponibilidad pública en el manifiesto VSIX para evitar que las cargas manuales
+  permanezcan privadas.
+
 ## 0.5.1 — 2026-09-21
 
 - Usar la identidad de publicador codingEzio en Marketplace para publicar la extensión desde la
