@@ -5,6 +5,8 @@ Private, instant word completion for Visual Studio Code. No model, account, API 
 Type `ar` in a file that contains `archive`, or type `th` anywhere: it can offer `archive` or `the`.
 That is the whole product.
 
+[Try the 90-second demo](docs/DEMO.md#english).
+
 [繁體中文](docs/README.zh-TW.md) · [简体中文](docs/README.zh-CN.md) · [한국어](docs/README.ko.md) ·
 [日本語](docs/README.ja.md) · [Español](docs/README.es.md) · [Русский](docs/README.ru.md) ·
 [Українська](docs/README.uk.md)
